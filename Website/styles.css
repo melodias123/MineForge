@@ -33,10 +33,21 @@ body{
     color:#4CAF50;
 }
 
-.logo img{
-    width:55px;
-    height:55px;
-    border-radius:10px;
+.logo img {
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+.logo img:hover{
+
+    transform:rotate(-8deg) scale(1.08);
+
 }
 
 .logo h1{
@@ -156,19 +167,33 @@ button:hover{
     flex-wrap:wrap;
 }
 
-.card{
-    width:300px;
-    background:#1e1e1e;
-    padding:30px;
-    border-radius:15px;
-    transition:.3s;
+.card {
+
+    background: linear-gradient(180deg, #1f1f1f, #191919);
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    width: 320px;
+
+    border: 2px solid transparent;
+
+    transition: all 0.35s ease;
+
 }
 
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 20px rgba(76,175,80,.4);
-}
+.card:hover {
 
+    transform: translateY(-10px);
+
+    border-color: #4CAF50;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.45),
+        0 0 25px rgba(76,175,80,.25);
+
+}
 .card img{
     width:100%;
     aspect-ratio:1/1;
@@ -196,18 +221,30 @@ button:hover{
     gap:30px;
 }
 
-.tool-card{
-    background:#1e1e1e;
-    border:2px solid #2d2d2d;
-    border-radius:15px;
-    padding:25px;
-    transition:.3s;
+.tool-card {
+
+    background: linear-gradient(180deg,#1f1f1f,#191919);
+
+    border-radius:18px;
+
+    border:2px solid transparent;
+
+    padding:30px;
+
+    transition:all .35s ease;
+
 }
 
-.tool-card:hover{
-    transform:translateY(-8px);
+.tool-card:hover {
+
+    transform:translateY(-10px);
+
     border-color:#4CAF50;
-    box-shadow:0 0 20px rgba(76,175,80,.25);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.45),
+        0 0 25px rgba(76,175,80,.25);
+
 }
 
 .status{

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tools | MineForge</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="../images/mineforge-logo.png" alt="MineForge Logo">
+
+            <h1>MineForge</h1>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">Home</a>
+
+            <a href="tools.html">Tools</a>
+
+            <a href="packs.html">Packs</a>
+
+            <a href="about.html">About</a>
+
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+    <h2>Nether Portal Calculator</h2>
+
+    <p>
+        Convert coordinates between the Overworld and the Nether instantly.
+    </p>
+
+    <div class="calculator">
+
+        <div class="converter-header">
+
+            <span id="fromLabel">Overworld</span>
+
+            <button id="swapButton" onclick="swapDirection()">⇄</button>
+
+            <span id="toLabel">Nether</span>
+
+        </div>
+
+        <input
+    type="number"
+    id="x"
+    placeholder="Overworld X"
+    onkeydown="handleEnter(event)">
+        <input
+            type="number"
+            id="z"
+            placeholder="Overworld Z"
+            onkeydown="handleEnter(event)">
+
+        <button onclick="calculateNether()">
+            Calculate
+        </button>
+
+        <h3 id="result"></h3>
+        <button id="copyButton" onclick="copyResult()">
+    📋 Copy Coordinates
+</button>
+<p id="copyMessage"></p>
+
+    </div>
+
+</section>
+<script src="../js/nether.js"></script>
+</body>
+
+</html>

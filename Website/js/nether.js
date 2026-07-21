@@ -84,5 +84,35 @@ function handleEnter(event) {
         calculateNether();
 
     }
+}
+function copyResult() {
+
+    const result = document.getElementById("result").innerText;
+
+    const message = document.getElementById("copyMessage");
+
+    if (result === "") {
+
+        message.textContent = "Please calculate coordinates first.";
+
+        setTimeout(() => {
+
+            message.textContent = "";
+
+        }, 2000);
+
+        return;
+
+    }
+
+    navigator.clipboard.writeText(result);
+
+    message.textContent = "✓ Coordinates copied!";
+
+    setTimeout(() => {
+
+        message.textContent = "";
+
+    }, 2000);
 
 }

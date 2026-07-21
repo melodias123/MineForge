@@ -28,11 +28,8 @@
         <div class="nav-links">
 
             <a href="../index.html">Home</a>
-
             <a href="tools.html">Tools</a>
-
             <a href="packs.html">Packs</a>
-
             <a href="about.html">About</a>
 
         </div>
@@ -41,45 +38,122 @@
 
     <section class="hero">
 
-    <h2>Nether Portal Calculator</h2>
+        <h2>Minecraft Tools</h2>
 
-    <p>
-        Convert coordinates between the Overworld and the Nether instantly.
-    </p>
+        <p>
+            Powerful Minecraft calculators and utilities built by MineForge.
+        </p>
 
-    <div class="calculator">
+    </section>
 
-        <div class="converter-header">
+    <section class="tools-grid">
 
-            <span id="fromLabel">Overworld</span>
+        <div class="tool-card">
 
-            <button id="swapButton" onclick="swapDirection()">⇄</button>
+            <h3>🌍 Nether Portal Calculator</h3>
 
-            <span id="toLabel">Nether</span>
+            <p>
+                Convert coordinates between the Overworld and the Nether instantly.
+            </p>
+
+            <span class="status available">
+                ✔ Available
+            </span>
+
+            <br><br>
+
+            <a href="nether.html" class="tool-button">
+                Open Tool
+            </a>
 
         </div>
 
-        <input
-    type="number"
-    id="x"
-    placeholder="Overworld X"
-    onkeydown="handleEnter(event)">
-        <input
-            type="number"
-            id="z"
-            placeholder="Overworld Z"
-            onkeydown="handleEnter(event)">
+        <div class="tool-card">
 
-        <button onclick="calculateNether()">
-            Calculate
-        </button>
+            <h3>⭐ XP Calculator</h3>
 
-        <h3 id="result"></h3>
+            <p>
+                Calculate Minecraft XP levels and total experience.
+            </p>
 
-    </div>
+            <span class="status coming">
+                🚧 Coming Soon
+            </span>
 
-</section>
-<script src="../js/nether.js"></script>
+        </div>
+
+        <div class="tool-card">
+
+            <h3>🗼 Beacon Calculator</h3>
+
+            <p>
+                Find the exact materials needed for every beacon size.
+            </p>
+
+            <span class="status coming">
+                🚧 Coming Soon
+            </span>
+
+        </div>
+
+        <div class="tool-card">
+
+            <h3>👨‍🌾 Villager Trade Calculator</h3>
+
+            <p>
+                Discover the best villager trades and professions.
+            </p>
+
+            <span class="status coming">
+                🚧 Coming Soon
+            </span>
+
+        </div>
+
+        <div class="tool-card">
+
+            <h3>🧪 Brewing Calculator</h3>
+
+            <p>
+                Brew every potion with the correct ingredients.
+            </p>
+
+            <span class="status coming">
+                🚧 Coming Soon
+            </span>
+
+        </div>
+
+        <div class="tool-card">
+
+            <h3>✨ Enchanting Calculator</h3>
+
+            <p>
+                Find the best enchantments for every item.
+            </p>
+
+            <span class="status coming">
+                🚧 Coming Soon
+            </span>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 MineForge. All rights reserved.</p>
+
+        <div class="footer-links">
+
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

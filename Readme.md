@@ -1,16 +1,64 @@
-# MineForge
+# Coryxa
 
-Welcome to MineForge!
+Coryxa is a modern Minecraft platform focused on creating high-quality tools, texture packs and community resources for Minecraft Java Edition.
 
-MineForge is a Minecraft development project focused on creating high-quality texture packs, plugins, tools, and resources for Minecraft Java Edition.
+## Features
 
-## Goals
+- Minecraft Tools
+- Texture Packs
+- Nether Portal Calculator
+- Responsive Website
+- FastAPI Backend (Coming Soon)
+- Admin Dashboard (Coming Soon)
 
-- Build useful Minecraft tools
-- Create PvP texture packs
-- Develop Minecraft plugins
-- Learn modern web development
+## Current Status
 
-## Status
+✅ Frontend Complete (v1.0)
 
-🚧 Version 0.1 - Project Setup
+### Completed Pages
+
+- Home
+- Tools
+- Texture Packs
+- About
+- Contact
+- Privacy Policy
+- Terms of Service
+- 404 Page
+
+### Planned
+
+- FastAPI Backend
+- Admin CMS
+- Automatic Tool Uploads
+- Automatic Texture Pack Uploads
+- Artwork Manager
+- News System
+- Analytics Dashboard
+- User Accounts
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- FastAPI (planned)
+- SQLite (planned)
+- GitHub Pages
+
+## Project Structure
+
+```
+/
+├── index.html
+├── pages/
+├── images/
+├── js/
+├── styles.css
+```
+
+## License
+
+Copyright © 2026 Coryxa.
+
+All rights reserved.

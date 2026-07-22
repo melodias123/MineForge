@@ -4,10 +4,9 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tools | MineForge</title>
+    <title>Coryxa | Nether Portal Calculator</title>
 
     <link rel="stylesheet" href="../styles.css">
 
@@ -19,71 +18,80 @@
 
         <div class="logo">
 
-            <img src="../images/mineforge-logo.png" alt="MineForge Logo">
+            <img src="../images/coryxa-logo.png" alt="Coryxa Logo">
 
-            <h1>MineForge</h1>
+            <h1>Coryxa</h1>
 
         </div>
 
         <div class="nav-links">
 
             <a href="../index.html">Home</a>
-
-            <a href="tools.html">Tools</a>
-
+            <a href="tools.html" class="active">Tools</a>
             <a href="packs.html">Packs</a>
-
             <a href="about.html">About</a>
 
         </div>
 
     </nav>
 
-    <section class="hero">
+    <main>
 
-    <h2>Nether Portal Calculator</h2>
+        <section class="hero">
 
-    <p>
-        Convert coordinates between the Overworld and the Nether instantly.
-    </p>
+            <h2>Nether Portal Calculator</h2>
 
-    <div class="calculator">
+            <p>
+                Instantly convert coordinates between the Overworld and the
+                Nether with Coryxa's fast and accurate calculator.
+            </p>
 
-        <div class="converter-header">
+            <div class="calculator">
 
-            <span id="fromLabel">Overworld</span>
+                <div class="converter-header">
 
-            <button id="swapButton" onclick="swapDirection()">⇄</button>
+                    <span id="fromLabel">Overworld</span>
 
-            <span id="toLabel">Nether</span>
+                    <button id="swapButton" onclick="swapDirection()">
+                        ⇄
+                    </button>
 
-        </div>
+                    <span id="toLabel">Nether</span>
 
-        <input
-    type="number"
-    id="x"
-    placeholder="Overworld X"
-    onkeydown="handleEnter(event)">
-        <input
-            type="number"
-            id="z"
-            placeholder="Overworld Z"
-            onkeydown="handleEnter(event)">
+                </div>
 
-        <button onclick="calculateNether()">
-            Calculate
-        </button>
+                <input
+                    type="number"
+                    id="x"
+                    placeholder="Overworld X"
+                    onkeydown="handleEnter(event)">
 
-        <h3 id="result"></h3>
-        <button id="copyButton" onclick="copyResult()">
-    📋 Copy Coordinates
-</button>
-<p id="copyMessage"></p>
+                <input
+                    type="number"
+                    id="z"
+                    placeholder="Overworld Z"
+                    onkeydown="handleEnter(event)">
 
-    </div>
+                <button onclick="calculateNether()">
+                    Calculate
+                </button>
 
-</section>
-<script src="../js/nether.js"></script>
+                <h3 id="result"></h3>
+
+                <button id="copyButton" onclick="copyResult()">
+                    📋 Copy Coordinates
+                </button>
+
+                <p id="copyMessage"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/nether.js"></script>
+
 </body>
 
 </html>

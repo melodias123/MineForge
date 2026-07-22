@@ -53,21 +53,38 @@ body{
 .logo h1{
     font-size:32px;
 }
-
-.nav-links{
+ .nav-links{
     display:flex;
-    gap:30px;
+    align-items:center;
+    gap:25px;
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
-    transition:.3s;
+    font-size:18px;
+    font-weight:500;
+    transition:0.25s ease;
+}
+
+.nav-links a:visited{
+    color:white;
 }
 
 .nav-links a:hover{
     color:#4CAF50;
 }
+
+.nav-links a.active{
+    color:#4CAF50;
+    font-weight:700;
+}
+
+.nav-links a.active:visited{
+    color:#4CAF50;
+}
+
+
 
 /* Hero */
 .hero{
@@ -76,8 +93,13 @@ body{
 }
 
 .hero h2{
-    font-size:60px;
-    margin-bottom:20px;
+
+    font-size:64px;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
 }
 
 .hero p{
@@ -124,14 +146,6 @@ body{
     transform: translateY(-5px);
 }
 
-.secondary-button {
-
-    background: #4CAF50;
-
-    border: none;
-
-    color: white;
-}
 /* Default Buttons */
 button{
     background:#4CAF50;
@@ -357,13 +371,12 @@ footer{
         gap:20px;
         padding:20px;
     }
-
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:18px;
-    }
-
+.nav-links{
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+  
     .hero h2{
         font-size:42px;
     }
